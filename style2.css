@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/********** Cart page ********/
+.body_cart {
+  background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #262626;
+  margin: 5% 0;
+}
+.cart_container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .cart_container {
+    max-width: 1140px;
+  }
+}
+.cart_flex {
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+.cart_form {
+  flex: 4;
+}
+.order {
+  flex: 2;
+}
+.cart_title {
+  background: (
+    linear,
+    left top,
+    right bottom,
+    color-stop(0, #a88751),
+    color-stop(100, #ffd470)
+  );
+  background: -moz-linear-gradient(top left, #9e804a 0%, #eeb265 100%);
+  background: -ms-linear-gradient(top left, #947042 0%, #dbad58 100%);
+  background: -o-linear-gradient(top left, #8f7741 0%, #c7994e 100%);
+  background: linear-gradient(to bottom right, #a88e51 0%, #ffde70 100%);
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  color: #f6f6f6;
+}
+.cart_title h2 {
+  margin: 0;
+  padding-left: 15px;
+}
+.required_cart {
+  color: rgb(149, 102, 25);
+}
+label,
+table {
+  display: block;
+  margin: 15px;
+}
+label > span {
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+  padding-right: 10px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 70%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+.select_cart {
+  width: 72%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.order {
+  margin-top: 15px;
+  height: 600px;
+  padding: 20px;
+  border: 1px solid #dadada;
+}
+table {
+  margin: 0;
+  padding: 0;
+}
+th {
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+}
+tr > td:nth-child(1) {
+  text-align: left;
+  color: #2d2d2a;
+}
+tr > td:nth-child(2) {
+  text-align: right;
+  color: #ad8a52;
+}
+td {
+  border-bottom: 1px solid #dadada;
+  padding: 25px 25px 25px 0;
+}
+
+.p_cart {
+  display: block;
+  color: #888;
+  margin: 0;
+  padding-left: 25px;
+}
+.order > div {
+  padding: 15px 0;
+}
+
+.btn_cart {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #ad8a52;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn_cart:hover {
+  cursor: pointer;
+  background: #b68a59;
+}
+/****** profile page *********/
+body {
+  background-color: #d8b782;
+}
+.log_out a {
+  background-color: cornsilk;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.log_out a:hover {
+  background-color: #d6b277;
+}
+.log_out {
+  text-align: center;
+}
+.log_btn {
+  width: 25%;
+  border-radius: 1%;
+}
+.user_info {
+  font-size: 1.5em;
+}
+.user_order {
+  font-size: 1em;
+  margin-top: 10%;
+}
+@media (max-width: 480px) {
+  .log_btn {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/************ footer *******************/
+.footer_pages {
+  position: fixed;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.fa {
+  width: 30px;
+  text-align: left;
+  border-radius: 50%;
+  float: left;
+  color: rgb(141, 86, 41);
+}
+.p_footer {
+  text-align: center;
+}
+.footer_pages a {
+  text-decoration: none;
+  color: rgb(141, 86, 41);
+}
+@media (max-width: 480px) {
+  .footer_pages {
+    display: block;
+  }
+}

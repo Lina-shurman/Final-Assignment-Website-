@@ -1,0 +1,652 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/********** top nav ***********/
+/* Add a black background color to the top navigation */
+.topnavigation {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnavigation a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-bottom: 3%;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnavigation a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnavigation a.active {
+  background-color: #000000;
+  color: white;
+}
+@media (max-width: 480px) {
+  .topnavigation a {
+    display: block;
+  }
+}
+
+/************ home page ***********/
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  color: black;
+}
+.container1 {
+  max-width: 1130px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+}
+.col-2 p {
+  font-size: 20px;
+}
+.button1 {
+  display: inline-block;
+  background-color: rgb(128, 71, 30);
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.button1:hover {
+  background: #6e2c00;
+}
+.header {
+  background: radial-gradient(#e7954d, #f6ddcc);
+}
+.catgories {
+  margin: 70px 0;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 60%;
+}
+.small-cont {
+  max-width: 80em;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4 {
+  flex-basis: 25%;
+  min-width: 200px;
+  margin-bottom: 50px;
+  padding: 10px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+}
+h4 {
+  color: rgb(85, 18, 18);
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 0.9em;
+}
+.rate .fa {
+  color: #421d04fd;
+}
+.col-4:hover {
+  transform: translate(10px);
+}
+.cal-img {
+  width: 5%;
+  height: 5%;
+}
+.offer {
+  background: radial-gradient(#e7954d, #f6ddcc);
+  margin-top: 5em;
+  padding: 20px 0;
+}
+.offer img {
+  display: inline-block;
+  width: 40%;
+}
+small {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .rate {
+    margin-top: 5%;
+    margin-left: 29%;
+  }
+  .col-4 p {
+    font-size: 1em;
+    margin-top: 2%;
+  }
+}
+/**** footer****/
+.footer {
+  background-color: black;
+  color: wheat;
+  font-size: 14px;
+  padding: 50px 20px 20px;
+}
+.footer p {
+  color: wheat;
+}
+.footer h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  width: 10em;
+
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 15%;
+  text-align: center;
+}
+.footer hr {
+  border: none;
+  height: 1px;
+  background-color: #b5b5b5;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+@media (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .footer {
+    display: inline-block;
+  }
+}
+/****** LOGIN PAGE******************************************/
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login_btn {
+  background-color: rgb(144, 97, 52);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+/* Add padding to containers */
+.container {
+  padding: 17px;
+}
+body {
+  text-align: center;
+  padding-top: 5em;
+}
+#log {
+  color: rgb(134, 85, 38);
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+#cont {
+  color: black;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="password"],
+  .login_btn {
+    width: 100%;
+  }
+  @media (min-width: 480px) and (max-width: 768) {
+    input[type="text"],
+    input[type="password"],
+    .login_btn {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768) {
+    input[type="text"],
+    input[type="password"],
+    .login_btn {
+      width: 100%;
+    }
+  }
+}
+
+/****** Sign Up PAGE******************************************/
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.sign_btn {
+  background-color: rgb(144, 97, 52);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+/* Add padding to containers */
+.container {
+  padding: 17px;
+}
+body {
+  text-align: center;
+  padding-top: 5em;
+}
+#log {
+  color: rgb(134, 85, 38);
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+#cont {
+  color: black;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 480px) {
+  input[type="text"],
+  input[type="password"],
+  .sign_btn {
+    width: 100%;
+  }
+  @media (min-width: 480px) and (max-width: 768) {
+    input[type="text"],
+    input[type="password"],
+    .sign_btn {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768) {
+    input[type="text"],
+    input[type="password"],
+    .sign_btn {
+      width: 100%;
+    }
+  }
+}
+/****** about us******************************************/
+
+#aboutus_h2 {
+  background-color: rgb(233, 199, 156);
+  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .aboutus_body {
+    background-color: #b1876b;
+  }
+  #aboutus_h2 {
+    font-size: 20px;
+  }
+  .aboutus {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 2%;
+  }
+  .aboutus_img {
+    width: 300px;
+    height: 250;
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768) {
+  .aboutus_body {
+    background-color: #daac8d;
+  }
+  #aboutus_h2 {
+    font-size: 30px;
+  }
+  .aboutus {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 2%;
+  }
+  .aboutus_img {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .aboutus_body {
+    background-color: #b1876b;
+  }
+  #aboutus_h2 {
+    font-size: 40px;
+  }
+  .aboutus {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 2%;
+  }
+  .aboutus_img {
+    margin-top: 4%;
+    width: 70%;
+    height: 50%;
+    margin-right: 4%;
+    float: center;
+    padding-left: 20px;
+  }
+}
+.aboutus_img_div {
+  text-align: center;
+}
+
+/******* Products **********/
+#headlogo {
+  text-align: center;
+  padding-bottom: 3%;
+  margin-top: 2%;
+}
+.head {
+  background-color: rgba(128, 76, 40, 0.664);
+}
+
+#prod {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 3%;
+}
+.title_product {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 0%;
+}
+
+.products2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6em;
+  justify-content: center;
+}
+.product2 {
+  padding: 5px;
+  margin-top: 5%;
+  position: relative;
+}
+.details1 {
+  font-size: 1em;
+  color: #000000;
+  text-align: center;
+}
+.button_product {
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 32%;
+}
+/********* footer pages *************/
+.footer_pages {
+  position: fixed;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+.fa {
+  width: 30px;
+  text-align: left;
+  border-radius: 50%;
+  float: left;
+  color: rgb(141, 86, 41);
+}
+.p_footer {
+  text-align: center;
+}
+.footer_pages a {
+  text-decoration: none;
+  color: rgb(141, 86, 41);
+}
+@media (max-width: 480px) {
+  .footer_pages {
+    display: block;
+  }
+}
